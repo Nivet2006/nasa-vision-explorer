@@ -14,7 +14,203 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      annotations: {
+        Row: {
+          ai_confidence: number | null
+          ai_generated: boolean | null
+          color: string | null
+          coordinates: Json
+          created_at: string | null
+          description: string | null
+          id: string
+          image_id: string
+          tags: string[] | null
+          title: string
+          type: string
+          updated_at: string | null
+          user_id: string
+        }
+        Insert: {
+          ai_confidence?: number | null
+          ai_generated?: boolean | null
+          color?: string | null
+          coordinates: Json
+          created_at?: string | null
+          description?: string | null
+          id?: string
+          image_id: string
+          tags?: string[] | null
+          title: string
+          type: string
+          updated_at?: string | null
+          user_id: string
+        }
+        Update: {
+          ai_confidence?: number | null
+          ai_generated?: boolean | null
+          color?: string | null
+          coordinates?: Json
+          created_at?: string | null
+          description?: string | null
+          id?: string
+          image_id?: string
+          tags?: string[] | null
+          title?: string
+          type?: string
+          updated_at?: string | null
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "annotations_image_id_fkey"
+            columns: ["image_id"]
+            isOneToOne: false
+            referencedRelation: "images"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      datasets: {
+        Row: {
+          color: string | null
+          created_at: string | null
+          description: string | null
+          id: string
+          name: string
+          type: string
+        }
+        Insert: {
+          color?: string | null
+          created_at?: string | null
+          description?: string | null
+          id?: string
+          name: string
+          type: string
+        }
+        Update: {
+          color?: string | null
+          created_at?: string | null
+          description?: string | null
+          id?: string
+          name?: string
+          type?: string
+        }
+        Relationships: []
+      }
+      image_datasets: {
+        Row: {
+          created_at: string | null
+          dataset_id: string
+          id: string
+          image_id: string
+        }
+        Insert: {
+          created_at?: string | null
+          dataset_id: string
+          id?: string
+          image_id: string
+        }
+        Update: {
+          created_at?: string | null
+          dataset_id?: string
+          id?: string
+          image_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "image_datasets_dataset_id_fkey"
+            columns: ["dataset_id"]
+            isOneToOne: false
+            referencedRelation: "datasets"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "image_datasets_image_id_fkey"
+            columns: ["image_id"]
+            isOneToOne: false
+            referencedRelation: "images"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      images: {
+        Row: {
+          capture_date: string | null
+          celestial_body: string
+          created_at: string | null
+          created_by: string | null
+          description: string | null
+          id: string
+          latitude: number | null
+          location_name: string | null
+          longitude: number | null
+          mission_name: string | null
+          resolution_megapixels: number | null
+          thumbnail_url: string | null
+          tile_source: string | null
+          title: string
+          updated_at: string | null
+        }
+        Insert: {
+          capture_date?: string | null
+          celestial_body: string
+          created_at?: string | null
+          created_by?: string | null
+          description?: string | null
+          id?: string
+          latitude?: number | null
+          location_name?: string | null
+          longitude?: number | null
+          mission_name?: string | null
+          resolution_megapixels?: number | null
+          thumbnail_url?: string | null
+          tile_source?: string | null
+          title: string
+          updated_at?: string | null
+        }
+        Update: {
+          capture_date?: string | null
+          celestial_body?: string
+          created_at?: string | null
+          created_by?: string | null
+          description?: string | null
+          id?: string
+          latitude?: number | null
+          location_name?: string | null
+          longitude?: number | null
+          mission_name?: string | null
+          resolution_megapixels?: number | null
+          thumbnail_url?: string | null
+          tile_source?: string | null
+          title?: string
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          avatar_url: string | null
+          created_at: string | null
+          id: string
+          updated_at: string | null
+          username: string | null
+        }
+        Insert: {
+          avatar_url?: string | null
+          created_at?: string | null
+          id: string
+          updated_at?: string | null
+          username?: string | null
+        }
+        Update: {
+          avatar_url?: string | null
+          created_at?: string | null
+          id?: string
+          updated_at?: string | null
+          username?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
