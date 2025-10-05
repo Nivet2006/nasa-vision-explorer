@@ -58,10 +58,10 @@ export const Hero = () => {
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 max-w-4xl mx-auto">
           {[
-            { value: "1T+", label: "Pixels Processed" },
+            {/*{ value: "1T+", label: "Pixels Processed" },
             { value: "500+", label: "Datasets Available" },
             { value: "AI", label: "Powered Search" },
-            { value: "Real-time", label: "Collaboration" },
+            { value: "Real-time", label: "Collaboration" },*/}
           ].map((stat, i) => (
             <div key={i} className="animate-in fade-in slide-in-from-bottom-4 duration-1000" style={{ animationDelay: `${400 + i * 100}ms` }}>
               <div className="text-3xl md:text-4xl font-bold text-accent mb-2">{stat.value}</div>
