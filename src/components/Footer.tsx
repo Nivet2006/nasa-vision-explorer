@@ -16,14 +16,13 @@ export const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-foreground">Tech Stack</h3>
             <ul className="text-sm text-muted-foreground space-y-2">
-              <li>• React.js + TypeScript</li>
+              <li>• Vite</li>
               <li>• OpenSeadragon / Leaflet</li>
-              <li>• AWS S3 / Cloud Storage</li>
-              <li>• OpenAI GPT API</li>
+              <li>• Vercel API</li>
             </ul>
           </div>
 
-          <div>
+          {/*<div>
             <h3 className="text-lg font-semibold mb-4 text-foreground">Resources</h3>
             <div className="space-y-2">
               <Button variant="ghost" size="sm" className="w-full justify-start gap-2 text-muted-foreground hover:text-foreground">
@@ -40,7 +39,7 @@ export const Footer = () => {
               </Button>
             </div>
           </div>
-        </div>
+        </div>*/}
 
         <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
           <p>Built for NASA Space Apps Challenge 2025 • Powered by cutting-edge web technologies</p>
