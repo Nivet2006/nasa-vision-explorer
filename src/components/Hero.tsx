@@ -33,7 +33,7 @@ export const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 bg-primary/10 border border-primary/30 rounded-full shadow-glow-primary">
           <Sparkles className="w-4 h-4 text-primary" />
-          <span className="text-sm text-primary font-medium">NASA Space Apps Challenge 2025</span>
+          <span className="text-sm text-primary font-medium">Source-D-Code</span>
         </div>
 
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-nebula bg-clip-text text-transparent animate-in fade-in slide-in-from-bottom-4 duration-1000">
