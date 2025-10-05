@@ -38,8 +38,6 @@ export const Hero = () => {
 
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-nebula bg-clip-text text-transparent animate-in fade-in slide-in-from-bottom-4 duration-1000">
           Explore the Universe
-          <br />
-          at Gigapixel Scale
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-150">
