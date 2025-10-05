@@ -14,7 +14,7 @@ export const Header = () => {
             </div>
           </div>
           
-          <nav className="hidden md:flex items-center gap-2">
+          {/*<nav className="hidden md:flex items-center gap-2">
             <Button variant="ghost" size="sm" className="gap-2">
               <Search className="w-4 h-4" />
               Search
@@ -27,7 +27,7 @@ export const Header = () => {
               <Map className="w-4 h-4" />
               Annotations
             </Button>
-          </nav>
+          </nav>*/}
 
           <Button className="bg-primary hover:bg-primary/90 shadow-glow-primary" onClick={() => window.location.href = "https://space-apps-local-wjct.vercel.app/"}>
             Launch Explorer
