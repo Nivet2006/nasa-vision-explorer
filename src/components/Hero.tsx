@@ -45,11 +45,16 @@ export const Hero = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300">
-          <Button size="lg" className="gap-2 bg-primary hover:bg-primary/90 shadow-glow-primary text-lg px-8 py-6" href="https://space-apps-local-wjct.vercel.app/">
+          <Button
+            size="lg"
+            className="gap-2 bg-primary hover:bg-primary/90 shadow-glow-primary text-lg px-8 py-6"
+            onClick={() => window.location.href = "https://space-apps-local-wjct.vercel.app/"}
+          >
             <Rocket className="w-5 h-5" />
             Start Exploring
             <ArrowRight className="w-5 h-5" />
           </Button>
+
           {/*<Button size="lg" variant="outline" className="gap-2 text-lg px-8 py-6 border-accent/30 hover:border-accent hover:bg-accent/10 hover:shadow-glow-accent">
             View Demo Mission
           </Button>*/}
