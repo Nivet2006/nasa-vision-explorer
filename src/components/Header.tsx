@@ -29,7 +29,7 @@ export const Header = () => {
             </Button>
           </nav>
 
-          <Button className="bg-primary hover:bg-primary/90 shadow-glow-primary">
+          <Button className="bg-primary hover:bg-primary/90 shadow-glow-primary" onClick={() => window.location.href = "https://space-apps-local-wjct.vercel.app/"}>
             Launch Explorer
           </Button>
         </div>
