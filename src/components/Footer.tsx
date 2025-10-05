@@ -42,7 +42,7 @@ export const Footer = () => {
         </div>*/}
 
         <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>Built for NASA Space Apps Challenge 2025 • Powered by cutting-edge web technologies</p>
+          <p>Built for NASA Space Apps Challenge 2025 • Source-D-Code</p>
         </div>
       </div>
     </footer>
