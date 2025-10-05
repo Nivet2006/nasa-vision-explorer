@@ -43,7 +43,7 @@ export const Hero = () => {
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-150">
-          Navigate through billions of pixels of NASA imagery. Discover Earth, planets, and deep space like never before with AI-powered search and annotation.
+          Space Apps Challenge 2025 Submission.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300">
@@ -52,9 +52,9 @@ export const Hero = () => {
             Start Exploring
             <ArrowRight className="w-5 h-5" />
           </Button>
-          <Button size="lg" variant="outline" className="gap-2 text-lg px-8 py-6 border-accent/30 hover:border-accent hover:bg-accent/10 hover:shadow-glow-accent">
+          {/*<Button size="lg" variant="outline" className="gap-2 text-lg px-8 py-6 border-accent/30 hover:border-accent hover:bg-accent/10 hover:shadow-glow-accent">
             View Demo Mission
-          </Button>
+          </Button>*/}
         </div>
 
         {/* Stats */}

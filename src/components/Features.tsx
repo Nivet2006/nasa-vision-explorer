@@ -4,14 +4,14 @@ import { ZoomIn, Tag, Search, Layers, Video, Share2 } from "lucide-react";
 const features = [
   {
     icon: ZoomIn,
-    title: "Gigapixel Navigation",
+    title: "pixel bit Navigation",
     description: "Seamlessly zoom and pan through multi-terapixel images of Earth, planets, and deep space.",
     color: "text-primary",
     glow: "shadow-glow-primary",
   },
   {
     icon: Tag,
-    title: "Smart Annotations",
+    title: "Annotations",
     description: "Label features with manual or AI-assisted tagging. Collaborate with researchers worldwide.",
     color: "text-accent",
     glow: "shadow-glow-accent",
@@ -25,7 +25,7 @@ const features = [
   },
   {
     icon: Layers,
-    title: "Dataset Overlays",
+    title: "Datasets Comparison",
     description: "Compare multispectral data, time series, and measurements from different NASA missions.",
     color: "text-primary",
     glow: "shadow-glow-primary",
@@ -39,7 +39,7 @@ const features = [
   },
   {
     icon: Share2,
-    title: "Collaboration Tools",
+    title: "Collab Tools",
     description: "Share discoveries, export data, and integrate with science outreach platforms.",
     color: "text-mars",
     glow: "shadow-glow-mars",
