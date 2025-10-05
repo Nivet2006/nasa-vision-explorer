@@ -45,7 +45,7 @@ export const Hero = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300">
-          <Button size="lg" className="gap-2 bg-primary hover:bg-primary/90 shadow-glow-primary text-lg px-8 py-6">
+          <Button size="lg" className="gap-2 bg-primary hover:bg-primary/90 shadow-glow-primary text-lg px-8 py-6" href="https://space-apps-local-wjct.vercel.app/">
             <Rocket className="w-5 h-5" />
             Start Exploring
             <ArrowRight className="w-5 h-5" />
